@@ -1,0 +1,9 @@
+[Unit]
+Description=Startup (virtual target)
+Conflicts=off.target
+Wants=a-timer-app.service
+After=a-timer-app.service
+RefuseManualStart=yes
+
+[Install]
+Also=on.timer

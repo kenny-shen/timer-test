@@ -1,0 +1,11 @@
+[Unit]
+Description=Sends the datetime to a log file
+
+[Service]
+User=kenny
+Type=oneshot
+ExecStart=/bin/bash -c 'date >> /home/kenny/timer.log'
+
+[Install]
+WantedBy=default.target
+Also=on.timer off.timer

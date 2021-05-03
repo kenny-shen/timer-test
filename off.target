@@ -1,0 +1,7 @@
+[Unit]
+Description=Shutdown (virtual target)
+Conflicts=a-timer-app.service on.target
+RefuseManualStart=yes
+
+[Install]
+Also=off.timer

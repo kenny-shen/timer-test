@@ -1,0 +1,10 @@
+[Unit]
+Description=Start timer
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 18:20:00
+Unit=on.target
+Persistent=true
+
+[Install]
+WantedBy=timers.target
